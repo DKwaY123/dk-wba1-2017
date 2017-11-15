@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Spielplatz eintragen</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<h1>Spielplätze</h1>
+	<h2>Spielplatz eintragen</h2>
+	<form id="playground-form">
+
+		<div>
+			<label for="playground-name">Name des Spielplatzes:</label>
+			<input type="text" id="playground-name" name="playground-name" />
+		</div>
+		<div>
+			<label for="playground-type">Art:</label>
+			<select name="playground-type" id="playground-type">
+				<option value="playground-type-normal">Normal</option>
+				<option value="playground-type-slide">Mit Rutsche</option>
+				<option value="playground-type-sandbox">Mit Sandkasten</option>
+			</select>
+		</div>
+		<div>
+
+			<label for="playground-size">Größe (m<sup>2</sup>):</label>
+			<input type="number"  id="playground-size" name="playground-size" />
+		</div>
+
+		<div>
+			<label for="playground-location">Ort (Stadt):</label>
+			<input type="text" id="playground-location" name="playground-location" />
+		</div>
+
+		<label for="playground-submit">👉</label>
+		<input name="playground-submit" id="playground-submit" type="submit" value="Spielplatz hinzufügen"/>
+	</form>
+
+
+	<section>
+		<h2>Eingetragene Spielplätze</h2>
+		<table id="playground-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Typ</th>
+					<th>Größe (m²)</th>
+					<th>Ort (Stadt)</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="4">Anzahl der Spielplätze: <span id="playground-count">0</span></td>
+				</tr>
+			</tfoot>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+	<script>
+	document.title =  "You have been hacked";
+
+	document.querySelector('h1').innerHTML = "You have been hacked";
+
+	var headline = document.querySelector('h1');
+	headline.innerHTML = "You have been hacked";
+	document.write(headline.innerHTML.length + 42);
+
+	function tableRowCount(){
+		var rows = document.getquerySelector('playground-table tbody tr');
+		alert(rows.length);
+	}
+		tableRowCount();
+</body>
+
+</html>

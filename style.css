@@ -1,45 +1,49 @@
-tabel {
-  border: 1px;
-  border-collapse: collapse;
-  padding: 0.8em;
+html, body{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	padding: 40px;
+}
+
+h1, h2, h3 {
+	font-weight: lighter;
+}
+
+h2, h3 {
+	color: #474747;
+}
+
+label {
+	display: inline-block;
+	width: 180px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 70%;
 }
 
 thead th {
-
-  border: 1px solid #000;
-  font-family: bold;
-  background-color: yellow;
-  border-collapse: collapse;
-
+	font-weight: bold;
 }
 
-td {
-  border: 1px solid #000;
-
+td, th {
+	padding: 8px;
+	text-align: left;
 }
 
-th {
-
+input {
+	width: 16em;
 }
 
-img{
-  width: 100px;
+input, select, label {
+	margin: 8px;
 }
 
-tr:nth-child(odd){
-  background-color: #E7E9EC;
-}
-tr:hover {
-  background-color: blue;
-}
-
-tbody t.right {
-  text-align: right;
-}
-
-.radio{
-  float: left;
-}
-.checkbox{
-  
+h1, section, #playground-form {
+	border-bottom: 0.5px solid lightblue;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	
 }
